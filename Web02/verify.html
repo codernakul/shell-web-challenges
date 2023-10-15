@@ -1,0 +1,22 @@
+
+<head>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body>
+   <p>Level 1 passed</p>
+    <p>Enter valid text for lvl 2:</p>
+    <input type="text" id="textInput" placeholder="Type your text here">
+    <button onclick="validateAndRedirect()">Submit</button>
+
+    <script>
+        function validateAndRedirect() {
+            var inputValue = document.getElementById("textInput").value;
+
+           
+            window.location.href = 'validate.php?input=' + inputValue;
+        }
+    </script>
+</body>
+</html>
+
